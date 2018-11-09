@@ -1,2 +1,2 @@
 # jamesbxtr
-Repo for jamesbxtr.org
+Repo for jamesbxtr.com
