@@ -11,7 +11,7 @@ html {
   background-color: #123469;
 }
 
-body {
+body .body-content {
   max-width: 1000;
   width: 80%;
   margin: 2rem auto;
@@ -98,11 +98,18 @@ h2 {}
 }
 
 .footer {
-  color: #FFF;
-  font-size: .8rem;
-  font-weight: 500;
+  width:100%;
+  height:2rem;
+  background-color:#FFF;
+  color: #0C2446;
   position: fixed;
-  bottom: 1rem;
-  margin-left: auto;
-  margin-right: auto;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  p {
+    font-size: .7rem;
+    font-weight: 500;
+    text-align: right;
+    transform: translate(-11%,50%);
+  }
 }
