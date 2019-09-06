@@ -1,14 +1,14 @@
 html {
   font-family: roboto, arial, sans-serif;
   font-size: 100%;
-  color: #FFF;
+  color: #A189A2;
   line-height: 1.4;
-  background-image: url(/images/clouds-background.jpg);
-  background-position: bottom center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-color: #123469;
+//  background-image: url(/images/clouds-background.jpg);
+//  background-position: bottom center;
+//  background-size: cover;
+//  background-attachment: fixed;
+//  background-repeat: no-repeat;
+  background-color: #FFF;
 }
 
 body .body-content {
@@ -27,13 +27,26 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  background-color: #FFF;
-  color: #0C2446;
+  background-color: #A189A2;
+  color: #FFF;
   font-size: 2.2rem;
   margin-bottom: .5rem;
 }
 
 h2 {}
+
+a {
+  color: #7B627C;
+  border-bottom: 1px dotted #7B627C;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+ul, ol {
+  margin:0 0 1rem 0;
+  padding:0 1rem;
+}
+
 
 .header {
   height: 100%;
@@ -49,38 +62,39 @@ h2 {}
 }
 
 .item, .item-title {
-  border-radius: 3px;
+  border-radius: 0;
   padding: 1rem;
 }
 
 .item {
-  background-color: rgba(255,255,255,.6);
-  color:  #0C2446;
+  //background-color: rgba(161,137,162,.2);
+  color: #302930;
   span {
-    background-color:  #0C2446;
+    background-color: #302930;
     color: #FFF;
     display: block;
     font-size: .8rem;
     margin:.5rem 0 auto;
     padding: 5px 2px;
     width: fit-content;
-    border-radius: 3px;
+    border-radius: 0;
   }
 }
 
 .item-title {
-  background-color: rgba(255,255,255,.2);
+  background-color: #302930;
+  color: #fff;
 }
 
 @media (min-width:600px) {
   .grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .item-title {
     grid-column: 1 / 4;
   }
   .item {
-    text-align: center;
+    //text-align: center;
     span {
       margin:.5rem auto 0;
     }
