@@ -1,13 +1,20 @@
-$dark: #202020;
-$light: white;
-$links: grey;
+$black: #202020;
+$dark: #203127;
+$light: #fdfbf6;
+$links: #3e5f4c;
+$links-dark: #3e5f4c;
 
 html {
   font-family: helvetica, arial, sans-serif;
   font-size: 1rem;
-  color: $dark;
+  color: $black;
   line-height: 1.4;
-  background-color: #FFF;
+  background-color: $light;
+  background-image: url(/images/plants.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  background-attachment: fixed;
 }
 
 body .body-content {
@@ -107,8 +114,8 @@ a {
 
 .footer {
   width:100%;
-  background-color:$dark;
-  color: $light;
+  background-color:$light;
+  color: $dark;
   position: fixed;
   bottom: 0;
   left: 0;
