@@ -13,16 +13,19 @@ html {
   margin:0;
 }
 
-body {
-  width:100vw;
+body .background-container {
+  margin: 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
   height: 100vh;
-  margin:0;
-  position: static;
   background-image: url(/images/green-plants-no-back-v4.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
-  background-attachment: fixed;
+  background-attachment: inherit;
+  z-index: -1;
 }
 
 body .body-content {
@@ -60,13 +63,13 @@ a {
   text-decoration: none;
 }
 
-
+// COMPONENTS -----------------------------
+// header
 .header {
   width: 100%;
   margin: 0 auto;
   padding: 0;
   .head-branding {
-    border-bottom: 1px solid $dark;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
@@ -92,38 +95,6 @@ a {
     height: auto;
     width: 100%;
   }
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-auto-rows: minmax(20px,auto);
-  grid-gap: 1rem;
-}
-
-.item, .item-title {
-  border-radius: 0;
-  padding: 1rem;
-}
-
-.item {
-  //background-color: rgba(161,137,162,.2);
-  color: $dark;
-  span {
-    background-color: $dark;
-    color: $light;
-    display: block;
-    font-size: .8rem;
-    margin:.5rem 0 auto;
-    padding: 5px 2px;
-    width: fit-content;
-    border-radius: 0;
-  }
-}
-
-.item-title {
-  background-color: $dark;
-  color: $light;
 }
 
 .footer {
