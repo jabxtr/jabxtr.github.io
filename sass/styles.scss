@@ -1,4 +1,5 @@
-$black: #202020;
+$black: #000;
+$white: #FFF;
 $dark: #203127;
 $light: #fdfbf6;
 $links: #3e5f4c;
@@ -14,17 +15,19 @@ html {
 }
 
 body .background-container {
-  margin: 0;
+  margin: 2rem 0;
   position: fixed;
   bottom: 0;
   left: 0;
+  min-width: 800px;
+  min-height: 100vh;
   width: 100vw;
-  height: 100vh;
+  //height: 100vh;
   background-image: url(/images/green-plants-no-back-v4.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
-  background-attachment: inherit;
+  background-attachment: fixed;
   z-index: -1;
 }
 
@@ -99,9 +102,9 @@ a {
 
 .footer {
   width:100%;
-  background-color:$light;
+  background-color:$white;
   color: $dark;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 0;
   margin: 0 auto;
