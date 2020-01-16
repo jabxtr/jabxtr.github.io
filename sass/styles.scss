@@ -6,12 +6,17 @@ $links: #3e5f4c;
 $links-dark: #3e5f4c;
 
 html {
-  font-family: helvetica, arial, sans-serif;
+  font-family: poppins, sans-serif;
   font-size: 1rem;
+  font-weight: 300;
   color: $black;
   line-height: 1.4;
   background-color: $light;
   margin:0;
+}
+
+strong {
+  font-weight: 400;
 }
 
 body .background-container {
@@ -22,7 +27,6 @@ body .background-container {
   min-width: 800px;
   min-height: 100vh;
   width: 100vw;
-  //height: 100vh;
   background-image: url(/images/green-plants-no-back-v4.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -97,6 +101,28 @@ a {
     max-height: 150px;
     height: auto;
     width: 100%;
+  }
+}
+
+.content-container{
+  margin: 1rem auto;
+  font-size: .8rem;
+  font-weight: 500;
+  width: fit-content;
+  background-color: rgba(255,255,255,.5);
+  ul {
+    list-style-type: none;
+    display: inline-flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    li {
+        margin: 0 1rem 0 0;
+        padding: 0 0 0 1rem;
+        border-left: 1px solid $dark;
+      }
+    li:first-of-type {
+        border-left: none;
+      }
   }
 }
 
